@@ -11,7 +11,19 @@ namespace upc {
   void PitchAnalyzer::autocorrelation(const vector<float> &x, vector<float> &r) const {
 
     for (unsigned int l = 0; l < r.size(); ++l) {
-  		/// \TODO Compute the autocorrelation r[l]
+  		/// \TODO Compute the autocorrelation r[l] 
+      r[l] = 0.0F;
+      for (unsigned int n = 0; n < r.size() - l; ++n) {
+        r[l] += x[n] * x[n + l];
+      }
+      /**
+       \DONE Autocorrelación Implementada
+       \f[
+       r[l] = \sum_{n=0}^{N-l} x[n] x[n+l]
+       \f]
+       - Inicializamos la autocorrelación a 0. 
+       - Sumamos multiplicaciones de la señal natural con la desplazada.
+       */
     }
 
     if (r[0] == 0.0F) //to avoid log() and divide zero 
