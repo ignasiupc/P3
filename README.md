@@ -1,6 +1,9 @@
 PAV - P3: estimación de pitch
 =============================
 
+Ignasi Fernández Bilbeny i Marc Elvira Pallardó
+-----------------------------
+
 Esta práctica se distribuye a través del repositorio GitHub [Práctica 3](https://github.com/albino-pav/P3).
 Siga las instrucciones de la [Práctica 2](https://github.com/albino-pav/P2) para realizar un `fork` de la
 misma y distribuir copias locales (*clones*) del mismo a los distintos integrantes del grupo de prácticas.
