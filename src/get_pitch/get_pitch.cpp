@@ -4,6 +4,7 @@
 #include <fstream>
 #include <string.h>
 #include <errno.h>
+#include <cmath>
 
 #include "wavfile_mono.h"
 #include "pitch_analyzer.h"
